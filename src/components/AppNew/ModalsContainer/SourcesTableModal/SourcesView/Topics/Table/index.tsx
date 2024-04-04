@@ -70,17 +70,17 @@ export const Table: React.FC<TopicTableProps> = ({ showMuted, onTopicEdit }) => 
           </MaterialTable>
           {selectedRefId ? (
             <PopoverWrapper
-            anchorEl={anchorEl}
-            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-            id={id}
-            onClose={handleClose}
-            open={open}
-            transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-          >
-            <PopoverOption onClick={() => handlePopoverAction('editTopic')}>Rename</PopoverOption>
-            <PopoverOption onClick={() => handlePopoverAction('mergeTopic')}>Merge</PopoverOption>
-            <PopoverOption onClick={() => handlePopoverAction('addEdge')}>Add edge</PopoverOption>
-          </PopoverWrapper>
+              anchorEl={anchorEl}
+              anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+              id={id}
+              onClose={handleClose}
+              open={open}
+              transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+            >
+              <PopoverOption onClick={() => handlePopoverAction('editTopic')}>Rename</PopoverOption>
+              <PopoverOption onClick={() => handlePopoverAction('mergeTopic')}>Merge</PopoverOption>
+              <PopoverOption onClick={() => handlePopoverAction('addEdge')}>Add edge</PopoverOption>
+            </PopoverWrapper>
           ) : null}
         </>
       )}
